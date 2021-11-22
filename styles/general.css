@@ -26,7 +26,7 @@ button {
     color: white;
     padding: 15px 40px;
     border-radius: 6px;
-    background-color: #05396b;
+    background-color: tomato;
     display: inline-block;
     cursor: pointer;
     border: none;
@@ -34,7 +34,7 @@ button {
     transition: .5s;
   }
 button:hover{
-    background-color: tomato;
+    background-color: #05396b;
     font-size: 18px;
 }
 section{
