@@ -1,0 +1,30 @@
+h1 {
+  text-align: center;
+  margin: 25px;
+}
+
+.contenedorImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quienesSomos img, .historiaEmpresa img {
+  width: 80%;
+}
+
+.seccionFormularioContacto {
+  background-color: #5CDB94;
+}
+
+@media only screen and (max-width: 600px) {
+  .historiaEmpresa .contenedor2Columnas .textContainer {
+    grid-row: 2/3;
+  }
+
+  .historiaEmpresa .contenedor2Columnas .contenedorImg {
+    grid-row: 1/2;
+  }
+}
+
+/*# sourceMappingURL=nosotros.css.map */

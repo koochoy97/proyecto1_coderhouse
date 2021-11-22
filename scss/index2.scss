@@ -1,0 +1,6 @@
+@for $i from 1 through 3{
+    .beneficio-#{$i}{
+        background-color: rgb(242, 248, 248);
+        
+    }
+}

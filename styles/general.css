@@ -1,0 +1,278 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'sora'
+}
+h1{
+    color: #05396b;
+    font-size: 61px;
+}
+h2{
+    font-size: 20px;
+    color: #252525;
+    text-align: center;
+}
+h3{
+    font-size: 20px;
+    color:#05396b;
+    font-weight: 500;
+}
+p{
+    color: #252525;
+    line-height: 40px;
+}
+
+button {
+    color: white;
+    padding: 15px 40px;
+    border-radius: 6px;
+    background-color: #05396b;
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    transition: .5s;
+  }
+button:hover{
+    background-color: tomato;
+    font-size: 18px;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor2Columnas{
+    padding: 40px 0;    
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(224px, 1fr));
+    grid-auto-rows: auto;
+    margin: 0;
+    justify-content: center;
+    gap: 20px;
+}
+
+/*------Barra de Navegacion-------*/
+/*------Barra de Navegacion-------*/
+/*------Barra de Navegacion-------*/
+/*------Barra de Navegacion-------*/
+.barraNavegacion{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 70px;
+    background-color: #5CDB94;
+    height: 70px;
+    flex-wrap: wrap;
+}
+.colIzquierda{
+    display: flex;
+    align-items: center;
+}
+.barraNavegacion img{
+    height: 40px;
+    width: auto;
+}
+.barraNavegacion ul{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    align-items: center;
+    padding-left: 40px;
+}
+.barraNavegacion ul li{
+    list-style: none;
+    padding: 24px 5px;
+    transition: .5s;
+    border-bottom: 2px solid transparent;
+}
+.barraNavegacion ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 24px 5px;
+    transition: .5s;
+}
+
+.barraNavegacion ul li a:hover{
+    color: #05396b;
+    font-weight: bold;
+}
+.barraNavegacion .navNosotros:hover{
+    border-bottom:1px solid transparent;
+}
+.barraNavegacion .navNosotros .dropdownMenu{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    justify-content: flex-start;
+    height: auto;
+    border-radius: 6px;
+    padding: 5px 10px;
+    opacity: 0;
+    display: none;
+    transition: .1s;
+}
+.navNosotros:hover .dropdownMenu{
+    display: block;
+    opacity: 1;
+}
+.barraNavegacion .dropdownMenu li{
+    width: 100%;
+    padding: 0;
+    margin: 5px 0;
+}
+.barraNavegacion .dropdownMenu a{
+    padding: 0;
+    color: #05396b;
+}
+
+/*------Footer-------*/
+/*------Footer-------*/
+/*------Footer-------*/
+/*------Footer-------*/
+.footer{
+    background-color: grey;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 40px;
+}
+.footer__text{
+    width: 50%;
+}
+.footer__rrss-contenedor{
+    display: flex;
+}
+.footer__rrss-img{
+    width: 40px;
+    margin: 5px;
+}
+
+
+
+
+/*------Formulario de contacto-------*/
+/*------Formulario de contacto-------*/
+/*------Formulario de contacto-------*/
+/*------Formulario de contacto-------*/
+.seccionFormularioContacto{
+    flex-direction: column;
+}
+.seccionFormularioContacto h2{
+    margin-top: 40px;
+    font-size: 41px;
+    font-weight: 500;
+    color: #05396b;
+}
+form{
+    margin: 20px auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 6px;
+}
+
+form input{
+    margin: 5px;
+    height: 42px;
+    font-size: 16px;
+    color: #252525;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid grey;
+    border: none;
+    width: 30vw;
+}
+
+form .inputEnviar{
+    background-color: #05396b;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 5px auto;
+    height: auto;
+    transition: .5s;
+    width: 15vw;
+}
+form .inputEnviar:hover{
+    background-color: tomato;
+    cursor: pointer; 
+}
+/*----Media queries------*/
+@media only screen and (max-width:900px){
+    .barraNavegacion{
+        height: auto;
+        flex-direction: column;
+    }
+    .barraNavegacion img{
+        height: 60px;
+    }
+    .colIzquierda{
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    .colIzquierda ul{
+        padding: 0;
+        flex-direction: column;
+    }
+    .barraNavegacion ul li{
+        padding: 0;
+        margin: 15px 0;
+    }
+    .barraNavegacion ul li a{
+        padding: 0;
+    }
+
+}
+
+@media only screen and (max-width:600px){
+    h1{
+        font-size: 32px;
+        text-align: center;
+    }
+    h2{
+        font-weight: 500;
+        text-align: center;
+    }
+    h3{
+        font-size: 18px;  
+        text-align: center;
+    }
+    p{
+        text-align: center;
+    }
+    button {
+        padding: 12px 20px;
+        font-size: 16px;
+        transition: .5s;
+    }
+    form{
+        flex-direction: column;
+        width: 80%;
+    }
+    form input{
+        width: 100%;
+    }
+    form .inputEnviar{
+        width: 100%;
+    }
+
+    footer{
+        flex-direction: column-reverse;
+        align-content: center;
+    }
+    footer p{
+        text-align: center;
+        width: 100%;
+    }
+    footer .contenedorRedesSociales{
+        justify-content: center;
+    }
+}

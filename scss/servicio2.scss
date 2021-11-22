@@ -1,0 +1,11 @@
+$map:(
+    1: Planificacion,
+    2: asesorias,
+    3: recetas
+);
+
+@each $i, $servicio in $map{
+    .servicio__tarjeta--tarjeta-#{$i}{
+        background-image: url(../images/#{$servicio}.jpg);
+    }
+}

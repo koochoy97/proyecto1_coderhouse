@@ -1,0 +1,55 @@
+h1, .contenedorDisclaimer, .contenedorSubtitulo {
+  width: 80%;
+  margin: 15px auto;
+}
+
+.contenedorSubtitulo {
+  background-color: #F0FBFF;
+  padding: 7px 10px;
+  border-radius: 6px;
+}
+
+.contenedorPlanes {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.contenedorPlanes .plan {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 20px;
+  transition: 0.5s;
+}
+.contenedorPlanes .plan button {
+  margin: 20px auto;
+}
+.contenedorPlanes .plan h3 {
+  font-size: 25px;
+  font-weight: bold;
+}
+.contenedorPlanes .plan h4 {
+  font-size: 41px;
+}
+.contenedorPlanes .plan h4 span {
+  font-size: 15px;
+}
+.contenedorPlanes .plan:hover {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 16px 0px;
+}
+
+.seccionFormularioContacto {
+  background-color: #5CDB94;
+}
+
+@media only screen and (max-width: 900px) {
+  .seccionPlanes .contenedorPlanes {
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .seccionPlanes .contenedorPlanes {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*# sourceMappingURL=planes2.css.map */
