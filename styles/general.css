@@ -209,6 +209,7 @@ form .inputEnviar:hover{
     .barraNavegacion{
         height: auto;
         flex-direction: column;
+        padding 40px 0;
     }
     .barraNavegacion img{
         height: 60px;
